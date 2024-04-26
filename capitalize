@@ -1,0 +1,4 @@
+name = input().split()
+n_name = ' '.join(name)
+cap_name = n_name.title()
+print(cap_name)
