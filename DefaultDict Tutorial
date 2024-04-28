@@ -1,0 +1,9 @@
+from collections import defaultdict
+def defaultDict(m,n):
+    a = defaultdict(list)
+    for i in range(1, n+1):
+        a[input()].append(i)
+    for _ in range(m):
+        return a.get(input()) or [-1]
+x,y = map(int,input().split())
+defaultDict(x,y)
