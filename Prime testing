@@ -1,0 +1,10 @@
+def prime(n):
+    h = n // 2
+    for i in range(2, h):
+        if n % i == 0:
+            print("it is not prime")
+            break
+    else:
+        print("it is prime")
+x = int(input())
+prime(x)
