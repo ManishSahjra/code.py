@@ -1,0 +1,11 @@
+n = int(input())
+for _ in range(n):
+    a,b = input().split()
+    try:
+        result = int(a)/int(b)
+    except ZeroDivisionError as e:
+        print(f"Error code",e)
+    except ValueError as e:
+        print(f"Error code",e)
+    else:
+        print(result)
