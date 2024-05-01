@@ -1,0 +1,8 @@
+n = int(input())
+number = list(map(int,input().split()))
+system = set(number)
+for i in system:
+    number.remove(i)
+    if i not in number:
+        print(i)
+        break
