@@ -1,0 +1,7 @@
+def star_timer(n):
+    for i in range(n):
+        print("   " * (i) + " * " * (5 * 2 - (2 * i)))
+    for j in range(n):
+        print(("   " * (4 - j) + " * " * (2 * (1 + j))))
+n = int(input("ENTER NUMBER OF LINE--> "))
+star_timer(n)
