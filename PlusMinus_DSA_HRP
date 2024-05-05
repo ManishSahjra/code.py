@@ -1,0 +1,16 @@
+def PlusMinus(n,number):
+    x = len(numbers)
+    positive, negative, zero = 0, 0, 0
+    for i in numbers:
+        if i > 0:
+            positive += 1
+        elif i < 0:
+            negative += 1
+        else:
+            zero += 1
+    print("{:.6f}".format(positive / x))
+    print("{:.6f}".format(negative / x))
+    print("{:.6f}".format(zero / x))
+x = int(input())
+numbers = list(map(int,input().split()))
+PlusMinus(x,numbers)
