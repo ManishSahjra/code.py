@@ -1,0 +1,12 @@
+import calendar
+def calender_module(date):
+    days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    if n2 == 29:
+        result1 = calendar.weekday(n3, n1, n2 - 6)
+        print(days[int(result1)].upper())
+    else:
+        x = calendar.weekday(n3, n1, n2 + 1)
+        print(days[int(x)].upper())
+x = n1, n2, n3 = map(int, input().split())
+calender_module(x)
