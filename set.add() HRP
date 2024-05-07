@@ -1,0 +1,11 @@
+n = int(input())
+list = [ ]
+nw_list = []
+for i in range(n):
+    country = input()
+    list.append(country)
+for j in list:
+    if j not in nw_list:
+        nw_list.append(j)
+y = len(nw_list)
+print(y)
