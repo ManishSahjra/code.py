@@ -1,0 +1,4 @@
+from itertools import groupby
+numbers = input()
+count = [(len(list(g)), int(k)) for k, g in groupby(numbers)]
+print(*count)
