@@ -1,0 +1,21 @@
+n = int(input())
+lis = []
+for i in range(n):
+    x = int(input())
+    if x<38:
+        lis.append(x)
+    elif x>38:
+        if x%5<3:
+            y = x
+            lis.append(y)
+        elif x%5==3:
+            x = x+2
+            lis.append(x)
+        else:
+            x = x+(5-x%5)
+            lis.append(x)
+    else:
+        x = 40
+        lis.append(x)
+for j in lis:
+    print(j)
