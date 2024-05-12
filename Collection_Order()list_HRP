@@ -1,0 +1,13 @@
+from collections import OrderedDict
+n = int(input())
+ordered_products = OrderedDict()
+x = 0
+for i in range(n):
+    item,net_price = input().rsplit(maxsplit=1)
+    ordered = list[item]
+    if item in ordered_products:
+        ordered_products[item]+=int(net_price)
+    else:
+        ordered_products[item] = int(net_price)
+for key, value in ordered_products.items():
+    print(key,value)
