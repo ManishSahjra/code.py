@@ -1,0 +1,12 @@
+A = set(map(int, input().split()))
+n = int(input())
+flag = 0
+for i in range(n):
+    a = set(map(int, input().split()))
+    b = A-a
+    if (len(A)-len(a))!=len(b):
+        flag+=1
+if flag>0:
+    print("False")
+else:
+    print("True")
