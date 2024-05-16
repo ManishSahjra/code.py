@@ -1,0 +1,6 @@
+import numpy
+from numpy import*
+numpy.set_printoptions(legacy='1.13')
+n,m = map(int, input().split())
+b = numpy.eye(n , m,k=0)
+print(b)
