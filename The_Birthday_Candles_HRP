@@ -1,0 +1,8 @@
+candles_count = int(input().strip())
+candles = list(map(int, input().rstrip().split()))
+max_candle = max(candles)
+x = 0
+for i in range(len(candles)):
+    if candles[i] == max_candle:
+        x += 1
+print(x)
