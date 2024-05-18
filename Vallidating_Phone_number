@@ -1,0 +1,16 @@
+n = int(input())
+lis = []
+for i in range(n):
+    call_no = input().strip()
+    if len(call_no) == 10:
+        if call_no.isdigit():
+            if call_no[0] in '789':
+                lis.append("YES")
+            else:
+                lis.append("NO")
+        else:
+            lis.append("NO")
+    else:
+        lis.append("NO")
+for j in lis:
+    print(j)
