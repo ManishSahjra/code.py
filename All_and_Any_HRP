@@ -1,0 +1,22 @@
+n = int(input())
+number = list(map(int, input().split()))
+
+lis = []
+
+for i in number:
+    if i < 0:
+        lis.append(5)
+        break
+    elif 0 <= i <= 9:
+        lis.append(1)
+    elif i >= 10:
+        str_i = str(i)
+        if str_i == str_i[::-1]:
+            lis.append(1)
+        else:
+            lis.append(0)
+
+if any(lis) and 5 not in lis:
+    print("True")
+else:
+    print("False")
