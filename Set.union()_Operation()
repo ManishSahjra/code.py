@@ -1,0 +1,15 @@
+def set_union(a,b,c,d):
+
+    set_a = set(x)
+
+    set_c = set(z)
+
+    return len(set_a.union(set_c))
+
+
+a = int(input())
+x = map(int,input().split())
+c = int(input())
+z = map(int,input().split())
+
+print(set_union(a,x,c,z))
