@@ -1,0 +1,10 @@
+n = int(input())
+unsorted_list = []
+for i in range(n):
+    unsorted_item = int(input())
+    unsorted_list.append(unsorted_item)
+
+
+unsorted_list.sort()
+for i in unsorted_list:
+    print(i,end=" ")
