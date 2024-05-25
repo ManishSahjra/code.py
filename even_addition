@@ -1,0 +1,12 @@
+def Even_odd_addition(a,b):
+    x = 0
+    y = 0
+    for i in range(a,b+1):
+        if i%2==0:
+            x+=i
+        elif i%2!=0:
+            y+=i
+    print("Sum of odd number and even number between the ranges is",x,y)
+a = int(input("Enter the first number:-  "))
+b = int(input("Enter the Second number:-  "))
+Even_odd_addition(a,b)
