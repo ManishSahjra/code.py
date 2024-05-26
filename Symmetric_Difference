@@ -1,0 +1,13 @@
+len_m = input()
+m = input().split()
+m_set = set(list(map(int, m)))
+
+len_n = input()
+n = input().split()
+n_set = set(list(map(int, n)))
+
+dif_m = m_set.difference(n_set)
+dif_n = n_set.difference(m_set)
+result = sorted(dif_m.union(dif_n))
+for i in result:
+    print(i)
