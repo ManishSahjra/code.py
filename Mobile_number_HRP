@@ -1,0 +1,11 @@
+n = int(input())
+final = []
+result = []
+for i in range(n):
+    number = input()
+    result.append(number)
+    striped = number[-10:-5] + " " + number[-5:]
+    final.append(striped)
+final.sort()
+for j in final:
+    print("+91"+" "+j)
