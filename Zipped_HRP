@@ -1,0 +1,9 @@
+N, X = input().split()
+notes = []
+total = 0
+for i in range(int(X)):
+    notes.append(list(map(float, input().split())))
+result = list(zip(*notes))
+result = [sum(values) / len(values) for values in result]
+for k in result:
+    print(k)
