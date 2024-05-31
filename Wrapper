@@ -1,0 +1,9 @@
+def wrapper(f):
+    def fun(l):
+        striped = sorted([i[-10:] for i in l])
+        for i in striped:
+            print("+91 "+i[0:5]+" "+i[5:])
+    return fun
+        
+        
+    return fun
