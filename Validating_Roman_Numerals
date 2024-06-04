@@ -1,0 +1,26 @@
+import re
+result = 0
+n = input().strip()
+x = {'I': 1, 'V': 5, 'X': 10, 'C': 50, 'L': 100, 'D': 500, 'M': 1000}
+subtractive = {'IV': 4, 'IX': 9, 'XL': 40, 'XC': 90, 'CD': 400, 'CM': 900}
+valid = True
+prev_value = float('inf')
+total = 0
+i = 0
+while i < len(n):
+    if n[i] not in x:
+        valid = False
+        break
+    if i + 1 < len(n) and n[i:i+2] in subtractive:
+        current_value = subtractive[n[i:i+2]]
+        i += 2
+    else:
+        current_value = x[n[i]]
+        i += 1
+    if current_value > prev_value:
+        valid = False
+        break
+    total += current_value
+    prev_value = current_value
+valid = valid and 1 <= total <= 3999
+print(total , valid)
