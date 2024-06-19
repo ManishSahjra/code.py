@@ -1,0 +1,8 @@
+import numpy
+n = int(input())
+matri = []
+for i in range(n):
+    element = list(map(float, input().split()))
+    matri.append(element)
+ar1 = numpy.array(matri)
+print(numpy.linalg.det(ar1))
