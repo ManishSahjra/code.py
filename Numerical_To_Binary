@@ -1,0 +1,10 @@
+n = int(input())
+res = " "
+if n==0:
+    print("0")
+else:
+    while n > 0:
+        remainder = n % 2
+        res = chr(remainder + ord('0')) + res
+        n = n//2
+print(res)
