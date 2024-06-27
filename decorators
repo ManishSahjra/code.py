@@ -1,0 +1,15 @@
+#This is code is just describe the use of decorators ,as we can see we can give instruction to the main function without adding anything into it..
+def div(a,b):
+    print(a/b)
+def decorators(func):
+
+    def inner(c,d):
+        if c<d:
+            c,d = d,c
+        return func(c,d)
+
+    return inner
+
+div1 = decorators(div)
+a,b = int(input()),int(input())
+div1(a,b)
