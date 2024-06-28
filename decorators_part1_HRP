@@ -1,0 +1,15 @@
+n = int(input())
+person = []
+
+for _ in range(n):
+    fname, lname, age, sex = input().split()
+    age = int(age)
+    person.append({'fname': fname, 'lname': lname, 'age': age, 'sex': sex})
+
+
+person.sort(key=lambda x: x['age'])
+
+
+for p in person:
+    print(f"First Name: {p['fname']}, Last Name: {p['lname']}, Age: {p['age']}, Sex: {p['sex']}")
+
