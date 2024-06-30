@@ -1,0 +1,19 @@
+n = int(input())
+set_A = set(map(int, input().split()))
+N = int(input())
+
+for i in range(N):
+    operation, total_elements = input().split()
+    set_B = set(map(int, input().split()))
+
+
+    if operation == 'intersection_update':
+        set_A.intersection_update(set_B)
+    elif operation == 'update':
+        set_A.update(set_B)
+    elif operation == 'difference_update':
+        set_A.difference_update(set_B)
+    elif operation == 'symmetric_difference_update':
+        set_A.symmetric_difference_update(set_B)
+
+print(sum(set_A))
