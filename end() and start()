@@ -1,0 +1,17 @@
+S = input()
+k = input()
+
+found = False
+
+for i in range(len(S) - len(k) + 1):
+    match = True
+    for j in range(len(k)):
+        if S[i + j] != k[j]:
+            match = False
+            break
+    if match:
+        print((i, i + len(k) - 1))
+        found = True
+
+if not found:
+    print((-1, -1))
