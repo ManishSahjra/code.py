@@ -1,0 +1,10 @@
+import math
+def ft(x):
+    if x==0:
+        return 1
+    else:
+        print(x)
+        return x*ft(x-1)
+
+x = int(input())
+print("final result: ", ft(x))
