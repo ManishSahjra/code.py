@@ -1,0 +1,16 @@
+import re
+
+string = "A man, a plan, a canal: Panama"
+clean_string = re.sub(r'[^A-Za-z0-9]', '', string).lower()
+print(clean_string)
+print(clean_string[::-1])
+is_palindrome = True
+length = len(clean_string)
+for i in range(length // 2):
+    if clean_string[i] != clean_string[length - 1 - i]:
+        is_palindrome = False
+        break
+if is_palindrome:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
