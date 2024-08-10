@@ -1,0 +1,10 @@
+n = int(input())
+number = str(n)
+sum = 0
+l = len(number)
+for i in number:
+    sum += pow(int(i), l)
+if sum == n:
+    print("true")
+else:
+    print("false")
